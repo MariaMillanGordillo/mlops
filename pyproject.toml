@@ -1,0 +1,27 @@
+[project]
+name = "mlops"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "MariaMillanGordillo",email = "m.millango@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12, <3.13"
+dependencies = [
+    "flama[cient,pydantic] (>=1.10.3,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.4,<3.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "pyarrow (>=19.0.1,<20.0.0)"
+]
+
+[tool.poetry]
+package-mode = true
+
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.3.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
